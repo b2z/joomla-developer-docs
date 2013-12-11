@@ -10,6 +10,7 @@
 			var disqus_shortname = 'b2zghpages'; // required: replace example with your forum shortname
 			var disqus_identifier = jQuery('.dochref').attr('ng-href');
 			console.log(disqus_identifier);
+			console.log(jQuery.type(disqus_identifier));
 			(function() {
 				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

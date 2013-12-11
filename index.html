@@ -35,9 +35,9 @@
 				<!-- <span ng-bind-html-unsafe="menu | marked"></span> -->
 				<span ng-bind-html-unsafe="treeJSONarray"></span>
 			</div>
-			<div class="span9 ng-view" id="content">
+			<div hljs class="span9 ng-view" id="content">
+			<div id="disqus_thread"></div>
 			</div>
-			<div class="span9" id="disqus_thread"></div>
 		</div>
 	</div>
 
@@ -53,6 +53,7 @@
 	<script src="js/marked.js"></script>
 	<script src="js/lib/angulartics.js"></script>
 	<script src="js/lib/angulartics-google-analytics.js"></script>
+	<script src="http://pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
 	<script type="text/javascript">
 	/* The DOM reports the document as ready before Angular populates the menu.
 	 * Force the jQuery for the menu collapse functionality to wait 3 seconds
@@ -65,8 +66,6 @@
 					jQuery(this).parent().children('ul.tree').toggle(300);
 			        jQuery(this).toggleClass('open');
 				});
-
-				hljs.initHighlightingOnLoad();
 			}, 3000);
 		});
 	</script>
